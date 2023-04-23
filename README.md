@@ -110,7 +110,7 @@ name = "arithmetic_modular"
 path = "src/arithmetic_modular.rs"
 ```
 
-Ejecuta el comando `cargo build` para compilar el proyecto. Este comando creará un archivo ejecutable en la carpeta target/debug llamado finite_field_arithmetic.
+Ejecuta el comando `cargo build` para compilar el proyecto. Este comando creará un archivo ejecutable en la carpeta target/debug llamado arithmetic_modular.
 
 ```bash
 cargo build
@@ -127,6 +127,10 @@ Ejemplo Python:
 ```bash
 python3 arithmetic_modular.py
 ```
+
+Ambos casos deberán ejecutar un reloj en los que vayan pasando las horas y enrollándose en módulos.
+
+![Graph](/Im%C3%A1genes/reloj.png)
 
 ## Operaciones en Aritmética Modular Base para RUST
 
