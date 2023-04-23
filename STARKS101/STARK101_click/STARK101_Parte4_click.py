@@ -108,7 +108,7 @@ print(f'Uncompressed proof length in characters: {len(str(channel.proof))}')
 import io
 import sys
 
-dibujo = """\
+dibujo = """\ Ha creado su primera prueba STARKs de Pioneros 101, FELICIDADES
  
                            %%%%%%%%%%%%%%%%%%%%%%%%
                       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,7 +141,10 @@ dibujo = """\
                  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                            %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Ahora comienza el Juego, Bienvenido al ecosistema STARKs...                           
 """
 
 # Imprimir el dibujo de ASCII en la terminal
 sys.stdout.write(dibujo)
+

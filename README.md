@@ -35,11 +35,15 @@ Puede encontrar Traducciones de documentos oficiales de MATHS Starkware [aquí](
     <li><a href="#STARKS - Parte 4">STARKS - Parte 4</a></li>
 </ol>
 
+---
+
 <div align="center">
     <h2 id="Introducción a STARKs y Validity Proofs">Introducción a STARKs y Validity Proofs</h2>
     <p> </p>
     <img src="">
 </div>
+
+
 
 ---
 
@@ -64,20 +68,45 @@ Se requiere que las operaciones de campo satisfagan los siguientes axiomas de ca
 5. Inversos multiplicativos: para cada a ≠ 0 en F, existe un elemento en F, denotado por α⁻¹, llamado inverso multiplicativo de a, tal que `a•α⁻¹ = 1`.
 6. Distributividad de la multiplicación sobre la suma: `a•(b + c) = (a•b) + (a•c)`.
 
-Ejemplo Rust
+## Ejemplo Práctico
+Si quiere hacer una prueba en su lenguaje con más conocimientos como Python o Rust, primero clone este repositorio.
+
+Primero clone este repositorio para tener todo los codigos ejecutando:
+
+```bash
+gh repo clone Nadai2010/Pioneros-Maths-STARKs-101
+```
+
+Luego en caso de Rust, abra el archivo `Cargo.toml` y verifica que todas las dependencias, rutas y nombres estén listadas correctamente. En este ejemplo de `Cargo.toml`
+
+```bash
+[[bin]]
+name = "finite_field_arithmetic"
+path = "src/finite_field_arithmetic.rs"
+```
+
+Ejecuta el comando `cargo build` para compilar el proyecto. Este comando creará un archivo ejecutable en la carpeta `target/debug` llamado `finite_field_arithmetic`.
 
 ```bash
 cargo build
 ```
+
+Navega hasta la carpeta `target/debug` en la terminal y ejecuta el archivo ejecutable con el comando `./finite_field_arithmetic`
+
 ```bash
 ./finite_field_arithmetic
 ```
+
+![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/fieldrs.png)
+
 
 Ejemplo Python
 
 ```bash
 python3 finite_field_arithmetic.py
 ```
+
+![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/fieldpy.png)
 
 ---
 
@@ -103,11 +132,31 @@ El resto debe ser positivo.
 
 Un ejemplo real de aritmética modular es la medición del tiempo mediante un reloj. Cuando la hora del día sobrepasa el módulo (12) nos "envolvemos" y empezamos en cero.
 
-Ejemplo Rust:
+## Ejemplo Práctico
+Si quiere hacer una prueba en su lenguaje con más conocimientos como Python o Rust, primero clone este repositorio.
+
+Primero clone este repositorio para tener todo los codigos ejecutando:
+
+```bash
+gh repo clone Nadai2010/Pioneros-Maths-STARKs-101
+```
+
+Luego en caso de Rust, abra el archivo `Cargo.toml` y verifica que todas las dependencias, rutas y nombres estén listadas correctamente. En este ejemplo de `Cargo.toml`
+
+```bash
+[[bin]]
+name = "arithmetic_modular"
+path = "src/arithmetic_modular.rs"
+```
+
+Ejecuta el comando `cargo build` para compilar el proyecto. Este comando creará un archivo ejecutable en la carpeta target/debug llamado finite_field_arithmetic.
 
 ```bash
 cargo build
 ```
+
+Navega hasta la carpeta `target/debug` en la terminal y ejecuta el archivo ejecutable con el comando `./arithmetic_modular`
+
 ```bash
 ./arithmetic_modular
 ```
@@ -118,19 +167,20 @@ Ejemplo Python:
 python3 arithmetic_modular.py
 ```
 
-## Operaciones en Aritmetica Modular para Rust
+## Operaciones en Aritmética Modular Base para RUST
 
 Suponiendo que tiene conocimietnos previos sobre Rust y que ha revisado los conceptos de Aritmetica modular, nos centraremos en ejecutar varios contratos y ver los resultados. 
 
-- [Aritmetica_Modular_Base.rs](https://github.com/Nadai2010/Clases-Maths/blob/master/Contracts/Rust/Aritmetica_Modular_Base.rs)- Código Base para las diferentes ecuaciones suma, resta, multiplicación y división en aritmética modular.
+- [Aritmetica_Modular_Base.rs](/Pioneros-Maths-STARKs-101/Rust%20MATHS/Aritmetica_Modular_Base.rs)- Código Base para las diferentes ecuaciones suma, resta, multiplicación y división en aritmética modular.
 
 
 Primero clone este repositorio para tener todo los codigos ejecutando:
+
 ```bash
-gh repo clone Starknet-Es/Maths-StarknetEs
+gh repo clone Nadai2010/Pioneros-Maths-STARKs-101
 ```
 
-## Operaciones en Aritmetica Modular
+### Operaciones en Aritmética Modular Base
 
 Para ejecutar los comandos dentro de la carpeta donde se encuentra nuestros archivo Rust y ejecute
 
@@ -144,7 +194,7 @@ Se generará un archivo el cual puede luego ejecutar corriendo en su terminal:
 ./Aritmetica_Modular_Base
 ```
 
-![Graph](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/modbasers.png)
+![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/modbasers.png)
 
 ### Suma modular de 15 y 7 modulo 10
 ```rust
@@ -167,7 +217,7 @@ let result = mod_multiply(15, 7, 10);
     println!("{}", result); 
 ```
 
-En este caso, el producto de 15 y 7 es 105. Sin embargo, como estamos trabajando en el módulo 10, necesitamos asegurarnos de que el resultado esté dentro del rango de valores permitidos (en este caso, de 0 a 9). El residuo de la división de 105 entre 10 es 5, lo que significa que el resultado del producto modular de 15 y 7 módulo 10 es 5.
+En este caso, el producto de 15 y 7 es 105. Sin embargo, como estamos trabajando en el módulo 10, necesitamos asegurarnos de que el resultado esté dentro del rango de valores permitidos (en este caso, de 0 a 9). El resto de la división de 105 entre 10 es 5, lo que significa que el resultado del producto modular de 15 y 7 módulo 10 es 5.
 
 ### División modular de 15 y 7 modulo 10
 ```rust
@@ -185,25 +235,25 @@ Por lo tanto, la división de 15 entre 7 en módulo 10 es equivalente a la multi
 
 ---
 
-## Guia de Aritmetica Modular para Python
+## Guia de Aritmética Modular Base para Python
 
 Suponiendo que tiene conocimietnos previos sobre Python y que ha revisado los concpetos de Aritmetica modular, nos centraremos en ejecutar varios contratos y ver los resultados. 
 
-- [Aritmetica_Modular_Base.py](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Python/Aritmetica_Modular_Base.py)- Código Base para las diferentes ecuaciones suma, resta, multiplicación y división en aritmética modular.
+- [Aritmetica_Modular_Base.py](/Pioneros-Maths-STARKs-101/Python%20MATHS/Aritmetica_Modular_Base.py)- Código Base para las diferentes ecuaciones suma, resta, multiplicación y división en aritmética modular.
 
 Primero clone este repositorio para tener todo los codigos ejecutadndo
 ```bash
-gh repo clone Starknet-Es/Maths-StarknetEs
+gh repo clone Nadai2010/Pioneros-Maths-STARKs-101
 ```
 
-## Operaciones en Aritmetica Modular para Python
+### Operaciones en Aritmética Modular Base
 Para ejecutar los comandos dentro de la carpeta donde se encuentra nuestros archivo Python ejecute
 
 ```python
 python3.9 Aritmetica_Modular_Base.py
 ```
 
-![Graph](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/modbasepy.png)
+![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/modbasepy.png)
 
 ### Suma modular de 15 y 7 modulo 10
 ```python
@@ -247,8 +297,3 @@ En este ejemplo, estamos buscando el inverso multiplicativo de 7 en módulo 10. 
 
 Por lo tanto, la división de 15 entre 7 en módulo 10 es equivalente a la multiplicación de 15 por el inverso multiplicativo de 7 en módulo 10, es decir, 15 * 3. El resultado de 15 * 3 módulo 10 es 5, por lo que el resultado de la división modular de 15 y 7 módulo 10 es 5
 
-
-
-Primero par el reloj haremos el cargo build con las dependeicias qu tenmos ajustaadas en el cargo.toml este arvhicontrolar larrutas, nombre, librerias, dependencias... y luego una vez se haya creado el archivo y las carpeta target, iremos dentro de ella para ejecutar el al aricho d
-
-con el comando  `./arithmetic_modular` dentro de la ruta `Rust MATHS/target/debug/`
