@@ -68,45 +68,6 @@ Se requiere que las operaciones de campo satisfagan los siguientes axiomas de ca
 5. Inversos multiplicativos: para cada a ≠ 0 en F, existe un elemento en F, denotado por α⁻¹, llamado inverso multiplicativo de a, tal que `a•α⁻¹ = 1`.
 6. Distributividad de la multiplicación sobre la suma: `a•(b + c) = (a•b) + (a•c)`.
 
-## Ejemplo Práctico
-Si quiere hacer una prueba en su lenguaje con más conocimientos como Python o Rust, primero clone este repositorio.
-
-Primero clone este repositorio para tener todo los codigos ejecutando:
-
-```bash
-gh repo clone Nadai2010/Pioneros-Maths-STARKs-101
-```
-
-Luego en caso de Rust, abra el archivo `Cargo.toml` y verifica que todas las dependencias, rutas y nombres estén listadas correctamente. En este ejemplo de `Cargo.toml`
-
-```bash
-[[bin]]
-name = "finite_field_arithmetic"
-path = "src/finite_field_arithmetic.rs"
-```
-
-Ejecuta el comando `cargo build` para compilar el proyecto. Este comando creará un archivo ejecutable en la carpeta `target/debug` llamado `finite_field_arithmetic`.
-
-```bash
-cargo build
-```
-
-Navega hasta la carpeta `target/debug` en la terminal y ejecuta el archivo ejecutable con el comando `./finite_field_arithmetic`
-
-```bash
-./finite_field_arithmetic
-```
-
-![Graph](/Im%C3%A1genes/fieldrs.png)
-
-
-Ejemplo Python
-
-```bash
-python3 finite_field_arithmetic.py
-```
-
-![Graph](/Im%C3%A1genes/fieldpy.png)
 
 ---
 
@@ -287,6 +248,49 @@ print(result)
 La operación de división no es una operación modular en sí misma, por lo que en este caso estamos usando una técnica conocida como inverso multiplicativo para encontrar el resultado de la división modular.
 
 ---
+
+## Ejemplo Práctico Finite Field Arithmetic
+Si quiere ver más ejemplos de campos finitos en aritmética modular de una forma mas resumida y detallada revise las siguientes imágenes en su lenguaje con más conocimientos como Python o Rust, primero clone este repositorio.
+
+Primero clone este repositorio para tener todo los codigos ejecutando:
+
+```bash
+gh repo clone Nadai2010/Pioneros-Maths-STARKs-101
+```
+
+Luego en caso de Rust, abra el archivo `Cargo.toml` y verifica que todas las dependencias, rutas y nombres estén listadas correctamente. En este ejemplo de `Cargo.toml`
+
+```bash
+[[bin]]
+name = "finite_field_arithmetic"
+path = "src/finite_field_arithmetic.rs"
+```
+
+Ejecuta el comando `cargo build` para compilar el proyecto. Este comando creará un archivo ejecutable en la carpeta `target/debug` llamado `finite_field_arithmetic`.
+
+```bash
+cargo build
+```
+
+Navega hasta la carpeta `target/debug` en la terminal y ejecuta el archivo ejecutable con el comando `./finite_field_arithmetic`
+
+```bash
+./finite_field_arithmetic
+```
+
+![Graph](/Im%C3%A1genes/fieldrs.png)
+
+
+Ejemplo Python
+
+```bash
+python3 finite_field_arithmetic.py
+```
+
+![Graph](/Im%C3%A1genes/fieldpy.png)
+
+---
+
 
 <div align="center">
     <h2 id="STARKS - Parte 1">STARKS - Parte 1</h2>
