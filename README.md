@@ -97,7 +97,7 @@ Navega hasta la carpeta `target/debug` en la terminal y ejecuta el archivo ejecu
 ./finite_field_arithmetic
 ```
 
-![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/fieldrs.png)
+![Graph](/Im%C3%A1genes/fieldrs.png)
 
 
 Ejemplo Python
@@ -106,7 +106,7 @@ Ejemplo Python
 python3 finite_field_arithmetic.py
 ```
 
-![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/fieldpy.png)
+![Graph](/Im%C3%A1genes/fieldpy.png)
 
 ---
 
@@ -194,7 +194,7 @@ Se generará un archivo el cual puede luego ejecutar corriendo en su terminal:
 ./Aritmetica_Modular_Base
 ```
 
-![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/modbasers.png)
+![Graph](/Im%C3%A1genes/modbasers.png)
 
 ### Suma modular de 15 y 7 modulo 10
 ```rust
@@ -253,7 +253,7 @@ Para ejecutar los comandos dentro de la carpeta donde se encuentra nuestros arch
 python3.9 Aritmetica_Modular_Base.py
 ```
 
-![Graph](/Pioneros-Maths-STARKs-101/Im%C3%A1genes/modbasepy.png)
+![Graph](/Im%C3%A1genes/modbasepy.png)
 
 ### Suma modular de 15 y 7 modulo 10
 ```python
