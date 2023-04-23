@@ -1,0 +1,13 @@
+[package]
+name = "Pioneros-Maths-STARKs-101"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "finite_field_arithmetic"
+path = "src/finite_field_arithmetic.rs"
+
+[dependencies]
+rand = "0.8.4"
+crossterm = "0.19.0"
+

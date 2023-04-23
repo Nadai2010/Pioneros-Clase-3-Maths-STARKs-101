@@ -246,3 +246,9 @@ El inverso multiplicativo de un número `a` en módulo `m` es un número `b` tal
 En este ejemplo, estamos buscando el inverso multiplicativo de 7 en módulo 10. El inverso multiplicativo de 7 en módulo 10 es 3, porque 7*3 es congruente con 1 módulo 10 (21 es divisible entre 10, por lo que el residuo de la división es 1).
 
 Por lo tanto, la división de 15 entre 7 en módulo 10 es equivalente a la multiplicación de 15 por el inverso multiplicativo de 7 en módulo 10, es decir, 15 * 3. El resultado de 15 * 3 módulo 10 es 5, por lo que el resultado de la división modular de 15 y 7 módulo 10 es 5
+
+
+
+Primero par el reloj haremos el cargo build con las dependeicias qu tenmos ajustaadas en el cargo.toml este arvhicontrolar larrutas, nombre, librerias, dependencias... y luego una vez se haya creado el archivo y las carpeta target, iremos dentro de ella para ejecutar el al aricho d
+
+con el comando  `./arithmetic_modular` dentro de la ruta `Rust MATHS/target/debug/`
