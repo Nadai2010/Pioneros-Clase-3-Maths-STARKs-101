@@ -42,8 +42,9 @@ Puede encontrar las Diapositvas de la Presentación [aquí](https://github.com/N
 <div align="center">
     <h2 id="Introducción a STARKs y Validity Proofs">Introducción a STARKs y Validity Proofs</h2>
     <p> </p>
-    <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Verificación.png"  width="700">
+    <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Verificación.png"  width="600">
 </div>
+
 
 La Integridad Computacional (CI) es una propiedad fundamental para el comercio, que se refiere a la confianza en que la salida de un cálculo es correcta. Es lo que nos permite confiar en el balance de una cuenta o en el monto de una factura en una tienda. Pero, ¿cómo podemos garantizar esta integridad en un entorno digital donde no siempre podemos confiar en todas las partes involucradas?
 
@@ -51,17 +52,24 @@ Aquí es donde entra en juego la tecnología STARK, que se basa en las pruebas d
 
 Las Validity Proofs o Pruebas de Validez son una herramienta crucial para garantizar la integridad y validez de los cambios realizados fuera de la cadena principal. Los sistemas de pruebas Zero Knowledge, en los que hay información secreta conocida por el prover que no es conocida por el verifier, son clave para las Validity Proofs. En el caso de Starknet, se trata de un Validity Rollup que utiliza STARKs.
 
-![Graph](/Im%C3%A1genes/Validity.png)
+
+<div align="center">
+    <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Validity.png"  width="300">
+</div>
 
 Es importante tener en cuenta que ZK es una propiedad adicional que se utiliza para afirmar al probador que no tiene que revelar ninguna información incluida en el cálculo. En el caso de Starknet como L2 pública, los datos de transacción son públicos, por lo que no se ofrece privacidad como tal. En Starknet, siempre nos referimos a Validity Rollup como la forma en que probamos la validez del cálculo computacional.
 
-![Graph](/Im%C3%A1genes/STARK.png)
+<div align="center">
+    <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/STARK.png"  width="300">
+</div>
 
-STARKs, por su parte, son un tipo de Pruebas Escalables y Transparentes de Argumentos de Conocimiento. Su principal ventaja es que trasladar un cálculo fuera de la cadena reduce exponencialmente los costes de verificación de la cadena de bloques, mientras que el proceso de creación de una prueba fuera de la cadena cuesta aproximadamente lo mismo que pedir a un único nodo de la cadena de bloques que ejecute el cálculo. Además, la seguridad de las STARK no depende de ceremonias de configuración elaboradas que puedan generar "residuos tóxicos" criptográficos, como sucede en otras tecnologías de pruebas.
+STARKs, por su parte, son un tipo de Pruebas Escalables y Transparentes de Argumentos de Conocimiento. 
 
-En el caso de las STARKs, las pruebas son realizadas por un prover fuera de la cadena que realmente ejecutó el cálculo junto con las entradas auxiliares necesarias. Esto significa que la prueba es matemáticamente comprobable de manera sólida, lo que la hace auténtica y verificable por cualquier computadora.
+* **S = Escalable.** Su principal ventaja es que trasladar un cálculo fuera de la cadena reduce exponencialmente los costes de verificación de la cadena de bloques, mientras que el proceso de creación de una prueba fuera de la cadena cuesta aproximadamente lo mismo que pedir a un único nodo de la cadena de bloques que ejecute el cálculo. 
+* **T = Transparente.** La seguridad de las STARK no depende de ceremonias de configuración elaboradas que puedan generar `residuos tóxicos` criptográficos, como sucede en otras tecnologías de pruebas.
+* **ARK = Argumento de Conocimiento.** Las pruebas son realizadas por un prover fuera de la cadena que realmente ejecutó el cálculo junto con las entradas auxiliares necesarias. Esto significa que la prueba es matemáticamente comprobable de manera sólida, lo que la hace auténtica y verificable por cualquier computadora.
 
-* Si quieres profundizar en este tema, te recomendamos consultar el libro [Starknet Book]()
+* Si quieres profundizar en este tema, te recomendamos consultar el libro [Starknet Book](https://book.starknet.io/chapter_10/index.html)
 * Si quieres revisar la presentación la encontrá [aquí](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/PDF/Pioneros%20Maths.pdf)
 
 ---
