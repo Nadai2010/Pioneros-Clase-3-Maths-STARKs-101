@@ -11,7 +11,7 @@
      
 |Presentación|Video|Prueba lo que has aprendido
 |:----:|:----:|:----:|
-|[Septiembre 2022](https://drive.google.com/file/d/1asONnOcSnRJwMXF-Zx1uJBdpbMrLYnmE/view?usp=sharing), [Febrero 2023](https://drive.google.com/file/d/1AWeCNRLgoiXVvLS31HxqslxUGIFMnwRf/view)|[Camp 1 (Septiembre 2022)](https://www.youtube.com/watch?v=7p60e7RzuMs), [Camp 2 (Febrero 2023)](https://m.youtube.com/live/n9vG4G_JqLE) |Pásate al hardcore con StarkWare [STARK 101](https://starkware.co/stark-101)|
+|[Septiembre 2022](https://drive.google.com/file/d/1asONnOcSnRJwMXF-Zx1uJBdpbMrLYnmE/view?usp=sharing), [Febrero 2023](https://drive.google.com/file/d/1AWeCNRLgoiXVvLS31HxqslxUGIFMnwRf/view), [Mayo 2023](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/PDF/Pioneros%20Maths.pdf)|[Camp 1 (Septiembre 2022)](https://www.youtube.com/watch?v=7p60e7RzuMs), [Camp 2 (Febrero 2023)](https://m.youtube.com/live/n9vG4G_JqLE), [Pioneros 1 (Mayo 2023)]() |Pásate al hardcore con StarkWare [STARK 101](https://starkware.co/stark-101) [Pioneros STARK 101](https://github.com/Nadai2010/Pioneros-Clase-3-Maths-STARKs-101/tree/master/STARKS101/STARK101_res)|
 
 Puede encontrar Traducciones de los Artículos oficiales de MATHS Starkware [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
 
