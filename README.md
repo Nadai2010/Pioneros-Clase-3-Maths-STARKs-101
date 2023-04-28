@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs/blob/master/Pioneros%20Maths%20Starks/basecamp.png" style="width: 300px">
+  <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Pioneros.png" style="width: 300px">
   <h1 style="font-size: larger;">
     <img src="https://github.com/Nadai2010/Nadai-SHARP-Starknet/blob/master/im%C3%A1genes/Starknet.png" width="40">
     <strong>Starknet Pioneros - Maths STARKs 101</strong> 
@@ -13,7 +13,9 @@
 |:----:|:----:|:----:|
 |[Septiembre 2022](https://drive.google.com/file/d/1asONnOcSnRJwMXF-Zx1uJBdpbMrLYnmE/view?usp=sharing), [Febrero 2023](https://drive.google.com/file/d/1AWeCNRLgoiXVvLS31HxqslxUGIFMnwRf/view)|[Camp 1 (Septiembre 2022)](https://www.youtube.com/watch?v=7p60e7RzuMs), [Camp 2 (Febrero 2023)](https://m.youtube.com/live/n9vG4G_JqLE) |Pásate al hardcore con StarkWare [STARK 101](https://starkware.co/stark-101)|
 
-Puede encontrar Traducciones de documentos oficiales de MATHS Starkware [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
+Puede encontrar Traducciones de los Artículos oficiales de MATHS Starkware [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
+
+Puede encontrar las Diapositvas de la Presentación [aquí](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/PDF/Pioneros%20Maths.pdf)
 </div>
 <p align="center">
     <a href="https://starkware.co/">
@@ -40,10 +42,27 @@ Puede encontrar Traducciones de documentos oficiales de MATHS Starkware [aquí](
 <div align="center">
     <h2 id="Introducción a STARKs y Validity Proofs">Introducción a STARKs y Validity Proofs</h2>
     <p> </p>
-    <img src="">
+    <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Verificación.png">
 </div>
 
+La Integridad Computacional (CI) es una propiedad fundamental para el comercio, que se refiere a la confianza en que la salida de un cálculo es correcta. Es lo que nos permite confiar en el balance de una cuenta o en el monto de una factura en una tienda. Pero, ¿cómo podemos garantizar esta integridad en un entorno digital donde no siempre podemos confiar en todas las partes involucradas?
 
+Aquí es donde entra en juego la tecnología STARK, que se basa en las pruebas de integridad y garantiza que la computación se realice de manera correcta, incluso si nadie está mirando. STARKs utiliza las matemáticas para lograr este objetivo y está diseñado para monitorear y garantizar la integridad de un gran cálculo realizado por un grupo de supercomputadoras poco confiables.
+
+Las Validity Proofs o Pruebas de Validez son una herramienta crucial para garantizar la integridad y validez de los cambios realizados fuera de la cadena principal. Los sistemas de pruebas Zero Knowledge, en los que hay información secreta conocida por el prover que no es conocida por el verifier, son clave para las Validity Proofs. En el caso de Starknet, se trata de un Validity Rollup que utiliza STARKs.
+
+![Graph](/Im%C3%A1genes/Validity.png)
+
+Es importante tener en cuenta que ZK es una propiedad adicional que se utiliza para afirmar al probador que no tiene que revelar ninguna información incluida en el cálculo. En el caso de Starknet como L2 pública, los datos de transacción son públicos, por lo que no se ofrece privacidad como tal. En Starknet, siempre nos referimos a Validity Rollup como la forma en que probamos la validez del cálculo computacional.
+
+![Graph](/Im%C3%A1genes/STARK.png)
+
+STARKs, por su parte, son un tipo de Pruebas Escalables y Transparentes de Argumentos de Conocimiento. Su principal ventaja es que trasladar un cálculo fuera de la cadena reduce exponencialmente los costes de verificación de la cadena de bloques, mientras que el proceso de creación de una prueba fuera de la cadena cuesta aproximadamente lo mismo que pedir a un único nodo de la cadena de bloques que ejecute el cálculo. Además, la seguridad de las STARK no depende de ceremonias de configuración elaboradas que puedan generar "residuos tóxicos" criptográficos, como sucede en otras tecnologías de pruebas.
+
+En el caso de las STARKs, las pruebas son realizadas por un prover fuera de la cadena que realmente ejecutó el cálculo junto con las entradas auxiliares necesarias. Esto significa que la prueba es matemáticamente comprobable de manera sólida, lo que la hace auténtica y verificable por cualquier computadora.
+
+* Si quieres profundizar en este tema, te recomendamos consultar el libro [Starknet Book]()
+* Si quieres revisar la presentación la encontrá [aquí](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/PDF/Pioneros%20Maths.pdf)
 
 ---
 
@@ -299,9 +318,41 @@ python3 finite_field_arithmetic.py
 <div align="center">
     <h2 id="STARKS - Parte 1">STARKS - Parte 1</h2>
 </div>
-El inverso multiplicativo de un número `a` en módulo `m` es un número `b` tal que `ab` es `congruente con 1 módulo m` (es decir, el residuo de la división de ab entre m es 1). En otras palabras, `b` es el número que, al multiplicarse por `a`, nos da un `resultado congruente con 1 módulo m`.
 
-En este ejemplo, estamos buscando el inverso multiplicativo de 7 en módulo 10. El inverso multiplicativo de 7 en módulo 10 es 3, porque 7*3 es congruente con 1 módulo 10 (21 es divisible entre 10, por lo que el residuo de la división es 1).
+Este material tiene el propósito de describir el funcionamiento del protocolo STARK (**S**calable **T**ransparent **AR**gument of **K**nowledge).
 
-Por lo tanto, la división de 15 entre 7 en módulo 10 es equivalente a la multiplicación de 15 por el inverso multiplicativo de 7 en módulo 10, es decir, 15 * 3. El resultado de 15 * 3 módulo 10 es 5, por lo que el resultado de la división modular de 15 y 7 módulo 10 es 5
+Se expresa una declaración vinculada a la secuencia de los Cuadrados de Fibonacci y se presenta todo el desarrollo matemático que busca convencer al verificador de que dicha declaración es correcta.
+
+El contenido se divide en 4 apartados. Para cada uno de ellos se proporciona un Jupyter Notebook con la explicación y código correspondiente para efectuar el procedimiento.
+
+A continuación se ofrece una breve descripción, a modo de resumen, de cada apartado:
+
+En esta sección se presentará la declaración que se va a probar usando el protocolo STARK y se describen los dos primeros pasos del protocolo: La Extensión de bajo grado o Low Degree Extension (LDE) y la fase de compromiso (the commitment phase).
+
+[Notebook Parte 1](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte1_resuelta.ipynb)
+
+<div align="center">
+    <h2 id="STARKS - Parte 2">STARKS - Parte 2</h2>
+</div>
+
+En este apartado se crearán las restricciones polinómicas empleando elementos calculados en la primera parte: La traza, el generador «g» y el polinomio de traza. Al finalizar, crearemos lo que denominamos «polinomio de composición» (composition polynomial en inglés, o CP si lo abreviamos) usando tres funciones racionales, y nuestro objetivo será determinar si CP es un polinomio; de ser así, entonces estaremos probando que la declaración inicial es cierta.
+
+[Notebook Parte 2](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte2_resuelta.ipynb)
+
+<div align="center">
+    <h2 id="STARKS - Parte 3">STARKS - Parte 3</h2>
+</div>
+
+En esta sección se desarrolla lo relacionado al protocolo FRI. En lugar de probar que CP es un polinomio, probaremos que CP es cercano a un polinomio de bajo grado, con eso es suficiente para nuestros fines y en este apartado se describen los pasos necesarios para llevarlo a cabo: Empezamos con una función, recibimos un elemento beta aleatorio y aplicamos el Operador FRI para obtener una nueva función. Se realiza este proceso varias veces hasta que se obtiene el valor de una constante, que será enviada al verificador.
+
+[Notebook Parte 3](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte3_resuelta.ipynb)
+
+<div align="center">
+    <h2 id="STARKS - Parte 4">STARKS - Parte 4</h2>
+</div>
+
+La prueba entera está dividida en dos segmentos: El primero es el compromiso (commitment) que fue desarrollado en las tres primeras partes. En esta sección se describe la fase de descompromiso (decommitment phase), se ofrecerán detalles de la prueba y la manera en que el probador puede convencer al verificador de que realmente elaboró todos los cálculos de manera correcta.
+
+[Notebook Parte 4](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte1_resuelta.ipynb)
+
 
