@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Pioneros.png" style="width: 300px">
+  <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Pioneros.png" style="width: 200px">
   <h1 style="font-size: larger;">
     <img src="https://github.com/Nadai2010/Nadai-SHARP-Starknet/blob/master/im%C3%A1genes/Starknet.png" width="40">
     <strong>Starknet Pioneros - Maths STARKs 101</strong> 
@@ -42,7 +42,7 @@ Puede encontrar las Diapositvas de la Presentación [aquí](https://github.com/N
 <div align="center">
     <h2 id="Introducción a STARKs y Validity Proofs">Introducción a STARKs y Validity Proofs</h2>
     <p> </p>
-    <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Verificación.png">
+    <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/Verificación.png"  width="700">
 </div>
 
 La Integridad Computacional (CI) es una propiedad fundamental para el comercio, que se refiere a la confianza en que la salida de un cálculo es correcta. Es lo que nos permite confiar en el balance de una cuenta o en el monto de una factura en una tienda. Pero, ¿cómo podemos garantizar esta integridad en un entorno digital donde no siempre podemos confiar en todas las partes involucradas?
