@@ -103,7 +103,7 @@ Se requiere que las operaciones de campo satisfagan los siguientes axiomas de ca
 ---
 
 <div align="center">
-    <h2 id="aritmética_modular">Aritmética Modular</h2>
+    <h2 id="Aritmética Modular">Aritmética Modular</h2>
 </div>
 
 [Véase esta introducción](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
