@@ -66,7 +66,6 @@ Es importante tener en cuenta que ZK es una propiedad adicional que se utiliza p
     <img src="https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/Im%C3%A1genes/STARK.png"  width="600">
 </div>
 
----
 
 STARKs, por su parte, son un tipo de Pruebas Escalables y Transparentes de Argumentos de Conocimiento. 
 
