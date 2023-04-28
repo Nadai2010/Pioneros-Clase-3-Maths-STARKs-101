@@ -343,6 +343,17 @@ En esta sección se presentará la declaración que se va a probar usando el pro
 
 [Notebook Parte 1](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte1_resuelta.ipynb)
 
+[El código Parte 1](https://github.com/Nadai2010/Pioneros-Clase-3-Maths-STARKs-101/blob/master/STARKS101/STARK101_click/STARK101_Parte1_click.py) Deberá encontrarse dentro de la carpeta del Archivo `STARK101_Parte1_click.py` para revisarlo y ejecutarlo, en este caso use en su terminal el siguiente comando:
+
+```bash
+python3.9 STARK101_Parte1_click.py
+```
+
+Deberá imprimirle la Parte 1 completa.
+
+![Graph](/Im%C3%A1genes/Parte1.png)
+
+
 <div align="center">
     <h2 id="STARKS - Parte 2">STARKS - Parte 2</h2>
 </div>
@@ -350,6 +361,16 @@ En esta sección se presentará la declaración que se va a probar usando el pro
 En este apartado se crearán las restricciones polinómicas empleando elementos calculados en la primera parte: La traza, el generador «g» y el polinomio de traza. Al finalizar, crearemos lo que denominamos «polinomio de composición» (composition polynomial en inglés, o CP si lo abreviamos) usando tres funciones racionales, y nuestro objetivo será determinar si CP es un polinomio; de ser así, entonces estaremos probando que la declaración inicial es cierta.
 
 [Notebook Parte 2](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte2_resuelta.ipynb)
+
+[El código Parte 2](https://github.com/Nadai2010/Pioneros-Clase-3-Maths-STARKs-101/blob/master/STARKS101/STARK101_click/STARK101_Parte2_click.py) Deberá encontrarse dentro de la carpeta del Archivo `STARK101_Parte2_click.py` para revisarlo y ejecutarlo, en este caso use en su terminal el siguiente comando:
+
+```bash
+python3.9 STARK101_Parte2_click.py
+```
+
+Deberá imprimirle la Parte 2 completa.
+
+![Graph](/Im%C3%A1genes/Parte2.png)
 
 <div align="center">
     <h2 id="STARKS - Parte 3">STARKS - Parte 3</h2>
@@ -359,6 +380,16 @@ En esta sección se desarrolla lo relacionado al protocolo FRI. En lugar de prob
 
 [Notebook Parte 3](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte3_resuelta.ipynb)
 
+[El código Parte 3](https://github.com/Nadai2010/Pioneros-Clase-3-Maths-STARKs-101/blob/master/STARKS101/STARK101_click/STARK101_Parte3_click.py) Deberá encontrarse dentro de la carpeta del Archivo `STARK101_Parte3_click.py` para revisarlo y ejecutarlo, en este caso use en su terminal el siguiente comando:
+
+```bash
+python3.9 STARK101_Parte3_click.py
+```
+
+Deberá imprimirle la Parte 3 completa.
+
+![Graph](/Im%C3%A1genes/Parte3.png)
+
 <div align="center">
     <h2 id="STARKS - Parte 4">STARKS - Parte 4</h2>
 </div>
@@ -367,4 +398,13 @@ La prueba entera está dividida en dos segmentos: El primero es el compromiso (c
 
 [Notebook Parte 4](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/STARKS101/STARK101_res/STARK101_Parte1_resuelta.ipynb)
 
+[El código Parte 4](https://github.com/Nadai2010/Pioneros-Clase-3-Maths-STARKs-101/blob/master/STARKS101/STARK101_click/STARK101_Parte4_click.py) Deberá encontrarse dentro de la carpeta del Archivo `STARK101_Parte4_click.py` para revisarlo y ejecutarlo, en este caso use en su terminal el siguiente comando:
+
+```bash
+python3.9 STARK101_Parte4_click.py
+```
+
+Deberá imprimir la Parte 4 completa y por primera vez ha creado una STARK. ¡Enhorabuena!
+
+![Graph](/Im%C3%A1genes/Parte4.gif)
 
