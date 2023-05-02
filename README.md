@@ -74,7 +74,7 @@ STARKs, por su parte, son un tipo de Pruebas Escalables y Transparentes de Argum
 * **ARK = Argumento de Conocimiento.** Las pruebas son realizadas por un prover fuera de la cadena que realmente ejecutó el cálculo junto con las entradas auxiliares necesarias. Esto significa que la prueba es matemáticamente comprobable de manera sólida, lo que la hace auténtica y verificable por cualquier computadora.
 
 * Si quieres profundizar en este tema, te recomendamos consultar el libro [Starknet Book](https://book.starknet.io/chapter_10/index.html)
-* Si quieres revisar la presentación la encontrá [aquí](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/PDF/Pioneros%20Maths.pdf)
+* Si quieres revisar la presentación la encontrará [aquí](https://github.com/Nadai2010/Pioneros-Maths-STARKs-101/blob/master/PDF/Pioneros%20Maths.pdf)
 
 ---
 
